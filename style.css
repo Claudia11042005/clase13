@@ -1,0 +1,108 @@
+body {
+    display: flex;
+    flex-direction: column; /* Coloca los botones en una columna */
+    justify-content: flex-start; /* Alinea verticalmente al inicio */
+    align-items: flex-start; /* Alinea al lado izquierdo */
+    height: 100vh;
+    background-color: #2c2f33; /* Color de fondo */
+    padding-left: 20px; /* Espacio entre el borde izquierdo y los botones */
+}
+
+button {
+    background-color: transparent;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    margin: 10px 0; /* espacio de los botones */
+    transition: all 0.3s ease;
+    width: 200px; /* Fija el ancho del botón */
+}
+
+button:hover {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.stars {
+    position: absolute;
+    display: none; /* Oculta las estrellas inicialmente */
+}
+
+button:hover .stars {
+    display: block; /* Muestra las estrellas al pasar el mouse */
+    animation: sparkle 1.5s infinite ease-in-out;
+}
+
+@keyframes sparkle {
+    0% {
+        transform: translate(-50px, 0) scale(0);
+        opacity: 0;
+    }
+    50% {
+        transform: translate(50px, -20px) scale(1);
+        opacity: 1;
+        filter: drop-shadow(0 0 10px #fffdef);
+    }
+    100% {
+        transform: translate(50px, 0) scale(0);
+        opacity: 0;
+    }
+}
+
+.stars:before,
+.stars:after,
+.stars .star1,
+.stars .star2,
+.stars .star3,
+.stars .star4 {
+    content: "✦"; 
+    position: absolute;
+    font-size: 24px;
+    color: #fffdef; /* Color de las estrellas */
+}
+
+.stars:before {
+    top: -10px;
+    left: -10px;
+    animation: sparkle 1.5s infinite ease-in-out;
+}
+
+.stars:after {
+    bottom: -10px;
+    right: -10px;
+    animation: sparkle 1.5s infinite 0.75s ease-in-out;
+}
+
+.stars .star1 {
+    top: 10px;
+    left: 30px;
+    animation: sparkle 1.5s infinite 0.5s ease-in-out;
+}
+
+.stars .star2 {
+    top: -5px;
+    right: 20px;
+    animation: sparkle 1.5s infinite 1s ease-in-out;
+}
+
+.stars .star3 {
+    bottom: 15px;
+    left: 40px;
+    animation: sparkle 1.5s infinite 1.5s ease-in-out;
+}
+
+.stars .star4 {
+    top: 20px;
+    right: 10px;
+    animation: sparkle 1.5s infinite 1.75s ease-in-out;
+}
+
+.h3 {
+    color: white;
+}
+
+
