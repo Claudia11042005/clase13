@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios con Switch</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Ejercicios con Switch</h1>
+
+    <section>
+        <h2>1. Día de la Semana</h2>
+        <label for="dia">Ingresa un número del 1 al 7:</label>
+        <input type="number" id="dia" min="1" max="7">
+        <button onclick="mostrarDia()">Mostrar Día
+            <div class="stars"></div>
+        </button>
+    </section>
+
+    <section>
+        <h2>2. Calificación</h2>
+        <label for="letra">Ingresa una letra (A, B, C):</label>
+        <input type="text" id="letra" maxlength="1">
+        <button onclick="mostrarCalificacion()">Mostrar Calificación
+            <div class="stars"></div>
+        </button>
+    </section>
+
+    <section>
+        <h2>3. Mes del Año</h2>
+        <label for="mes">Ingresa un número del 1 al 12:</label>
+        <input type="number" id="mes" min="1" max="12">
+        <button onclick="mostrarMes()">Mostrar Mes
+            <div class="stars"></div>
+        </button>
+    </section>
+
+    <section>
+        <h2>4. Par o Impar</h2>
+        <label for="numero">Ingresa un número:</label>
+        <input type="number" id="numero">
+        <button onclick="mostrarParImpar()">Mostrar
+            <div class="stars"></div>
+        </button>
+    </section>
+
+    <section>
+        <h2>5. Semáforo</h2>
+        <label for="semaforo">Ingresa el color del semáforo (verde, amarillo, rojo):</label>
+        <input type="text" id="semaforo" maxlength="10">
+        <button onclick="mostrarSemaforo()">Mostrar Mensaje
+            <div class="stars"></div>
+        </button>
+    </section>
+
+    <script src="js/switch.js"></script>
+</body>
+</html>

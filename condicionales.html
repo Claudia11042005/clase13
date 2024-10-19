@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programas Condicionales</title>
+    <link rel="stylesheet" href="css/style.css"> 
+</head>
+<body>
+    <h1>Programas Condicionales</h1>
+
+    <div>
+        <h2>1. Calificación</h2>
+        <input type="number" id="calificacion" placeholder="Introduce tu calificación">
+        <button onclick="verificarCalificacion()">Comprobar
+            <div class="stars"></div>
+        </button>
+        <p id="resultadoCalificacion"></p>
+    </div>
+
+    <div>
+        <h2>2. Número Positivo/Negativo/Cero</h2>
+        <input type="number" id="numero" placeholder="Introduce un número">
+        <button onclick="verificarNumero()">Comprobar
+            <div class="stars"></div>
+        </button>
+        <p id="resultadoNumero"></p>
+    </div>
+
+    <div>
+        <h2>3. Día de la Semana</h2>
+        <input type="number" id="dia" placeholder="Introduce un número del 1 al 7">
+        <button onclick="verificarDia()">Comprobar
+            <div class="stars"></div>
+        </button>
+        <p id="resultadoDia"></p>
+    </div>
+
+    <div>
+        <h2>4. Mayor de Dos Números</h2>
+        <input type="number" id="num1" placeholder="Introduce el primer número">
+        <input type="number" id="num2" placeholder="Introduce el segundo número">
+        <button onclick="determinarMayor()">Comprobar
+            <div class="stars"></div>
+        </button>
+        <p id="resultadoMayor"></p>
+    </div>
+
+    <div>
+        <h2>5. Mayor de Edad</h2>
+        <input type="number" id="edad" placeholder="Introduce tu edad">
+        <button onclick="verificarEdad()">Comprobar
+            <div class="stars"></div>
+        </button>
+        <p id="resultadoEdad"></p>
+    </div>
+
+    <div>
+        <h2>6. Divisibilidad</h2>
+        <input type="number" id="numeroDivisible" placeholder="Introduce un número">
+        <button onclick="verificarDivisibilidad()">Comprobar
+            <div class="stars"></div>
+        </button>
+        <p id="resultadoDivisible"></p>
+    </div>
+
+    <script src="js/condicionales.js"></script>
+</body>
+</html>
